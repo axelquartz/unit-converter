@@ -12,7 +12,7 @@ convertButton.addEventListener("click", (event) => {
   console.log(inputValue);
   outputValue.textContent = `Converted Value: ${inputValue}`;
 
-  lengthValue.textContent = `${inputValue} meters = ${inputValue * 3.28} feet`;
-  weightValue.textContent = `${inputValue} kilograms = ${inputValue * 2.2} pounds`;
-  volumeValue.textContent = `${inputValue} liters = ${inputValue * 0.264} gallons`;
+  lengthValue.textContent = `${inputValue} meters = ${(inputValue * 3.28).toFixed(3)} feet`;
+  weightValue.textContent = `${inputValue} kilograms = ${(inputValue * 2.2).toFixed(3)} pounds`;
+  volumeValue.textContent = `${inputValue} liters = ${(inputValue * 0.264).toFixed(3)} gallons`;
 });
